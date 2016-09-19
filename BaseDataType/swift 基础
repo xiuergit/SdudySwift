@@ -1,0 +1,60 @@
+swift 基础
+   swift 是一门类型安全的语言；Swift 的类型是在 C 和 Objective-C 的基础上提出的，Int是整型；Double和Float是浮点型；Bool是布尔型；String是字符串。Swift 还有两个有用的集合类型，Array和Dictionary；
+
+   就像 C 语言一样，Swift 使用变量来进行存储并通过变量名来关联值。在 Swift 中，值不可变的变量有着广泛的应用，它们就是常量，而且比 C 语言的常量更强大。在 Swift 中，如果你要处理的值不需要改变，那使用常量可以让你的代码更加安全并且更好地表达你的意图。
+   除了我们熟悉的类型，Swift 还增加了 Objective-C 中没有的类型比如元组（Tuple）。元组可以让你创建或者传递一组数据，比如作为函数的返回值时，你可以用一个元组可以返回多个值。
+
+   Swift 还增加了可选（Optional）类型，用于处理值缺失的情况。可选表示“那儿有一个值，并且它等于 x ”或者“那儿没有值”。可选有点像在 Objective-C 中使用nil，但是它可以用在任何类型上，不仅仅是类。可选类型比 Objective-C 中的nil指针更加安全也更具表现力，它是 Swift 许多强大特性的重要组成部分。
+
+  Swift 是一个类型安全的语言，可选就是一个很好的例子。Swift 可以让你清楚地知道值的类型。如果你的代码期望得到一个String，类型安全会阻止你不小心传入一个Int。你可以在开发阶段尽早发现并修正错误。
+     
+
+ 1、变量、常量的定义
+   在swift 中  你可以不指定具体的数据类型、编译器会根据值自动识别；
+   变量用 var 表示
+   常量用 let 表示
+   eg:
+   let myContent:int=20//定义一个整数常量 初始值20；第一次必须有初始值 常量是不可修改的
+   var myContent2=30//可以不加数据类型，编译器会自动识别
+
+ 2、基本数据类型：
+    Int Float String Double
+
+ 3、在swift 中没有隐士转换 ，必须实行强制转换
+      myContent2=45（✅）
+      myContent2=34.2(❌)(编译不通过)//第一次的初始值确定了其数据类型
+      myContent2=Int(12.3)(✅)
+4、没有初始值 编译不通过（必须有初始值）
+     //let  myContent ;
+      //var  myVarible ;
+5、类型别名 其实就是相当于给类型起了个名字，这个名字可以映射到原类型的所有；关键字 typealias
+    typealias ZXInt=Int;
+    let myInt2:ZXInt=23
+     print(myInt2)
+   //获取整数的最大最小值通过别名
+   let min=ZXInt.min
+   let max=ZXInt.max
+    print(min,max)
+
+//7、bool类型的值，之前大家所熟悉的object——c里面的bool值为yes、no；
+//在swift 中用true、false 来表达，这个跟java 一样
+let isHappy=true
+if isHappy{
+print("我很开心");
+}
+else {
+print("我不开心")
+}
+//8 在swift 中 条件判断必须是 逻辑表达式
+let  i=0;
+if i{
+print("这样的写法是错误的")
+}
+if i>0{
+print("正确")
+}
+
+
+
+
+

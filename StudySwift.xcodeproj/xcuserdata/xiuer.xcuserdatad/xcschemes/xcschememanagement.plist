@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BaseDataType.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Food.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>StudySwift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +33,26 @@
 			<true/>
 		</dict>
 		<key>552136071D863D98002C6897</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5521361D1D863FEF002C6897</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55B61EA21D8F884700710214</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55B61EB51D8F884700710214</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55B61EC01D8F884700710214</key>
 		<dict>
 			<key>primary</key>
 			<true/>
